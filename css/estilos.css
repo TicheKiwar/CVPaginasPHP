@@ -1,0 +1,50 @@
+body{
+    background-color: azure;
+    margin: 50px;
+}
+header{
+    position: center;
+    background-color: brown;
+    margin: 50px;
+    padding: 10px;
+    text-align: center;
+
+}
+nav{
+    position: center;
+    margin: 50px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(182, 49, 8);
+    
+}
+nav ul{
+    position: center;
+    margin: 50px;
+    width: 50%;
+    text-align: center; 
+}
+nav ul li{
+    display: inline-block;
+    margin: auto;
+    width: 15%;
+    line-height: 50px;
+    list-style: none;
+    
+}
+nav ul li a {
+    color: black;
+    padding: 30px;
+    text-decoration: none;
+}
+footer{
+    background: rgb(83, 80, 80);
+    color: azure;
+    text-align: center;
+    font-size: xx-large;
+    font-style: italic;
+    font-size: 15px;
+}
+.texto{
+    color: rgb(2, 63, 63);
+}
