@@ -14,7 +14,6 @@
             <li><a href="index.php?action=nosotros">Nosotros</a></li>
             <li><a href="index.php?action=login">Servicios</a></li>
             <li><a href="index.php?action=contactos">Contactos</a></li>
-            <li><a href="index.php?action=reporte">Reportes</a></li>
         </ul>
     </nav>
     <section>

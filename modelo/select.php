@@ -7,4 +7,5 @@ while ($row=$respuesta->fetch_array()){
     array_push($resultado,$row);
 }
 echo json_encode($resultado);
+
 ?>

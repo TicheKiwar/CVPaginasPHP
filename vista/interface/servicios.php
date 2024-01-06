@@ -21,7 +21,15 @@ include('./modelo/conexion.php');
     
         <h2>Basic CRUD Application</h2>
         <p>Click the buttons on datagrid toolbar to do crud actions.</p>
-        
+        <form action="vista/interface/reporteI.php" method="post">    
+
+            <input type="submit" class="easyui-linkbutton" iconCls="icon-ok" value="Generar Reporte">
+
+        </form>
+        <form action="./modelo/buscarCedula.php" method="GET">
+            <input type="text" name="cedula">
+            <input type="submit" class="easyui-linkbutton" iconCls="icon-ok" value="Busqueda">
+        </form>
         <table id="dg" title="Estudiantes" class="easyui-datagrid" style="width:700px;height:250px"
                 url="modelo/select.php"
                 toolbar="#toolbar" pagination="true"
@@ -181,9 +189,11 @@ include('./modelo/conexion.php');
                                 </a> 
                                 <a href="./modelo/eliminar.php?cedula=<?php echo $row['est_cedula'] ?>" class="btn btn-danger">
                                     <i class="far fa-trash-alt"></i>
+                                </a>
+                                <a href="./vista/interface/reporteI.php?cedula=<?php echo $row['est_cedula'] ?>" class="btn btn-success btn-block">
+                                REPORTE
                                 </a> 
                             </td>
-                           <!--"-->
                     <?php } ?>
         </tbody>
 

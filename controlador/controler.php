@@ -11,7 +11,7 @@ class McvController {
             $enlacesController = "./vista/interface/inicio.php";
         }
         $respuesta=EnlacePaginas::enlacePaginasModelo($enlacesController);
-        include $respuesta;
-    }
+            include $respuesta;
+        }
 }
 ?>
